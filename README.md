@@ -51,4 +51,4 @@ python manage.py migrate
 ```sh
 python manage.py runserver
 ```
-### visit [127.0.0.1:8000](127.0.0.1:8000)
+### visit [127.0.0.1:8000/](127.0.0.1:8000/)
