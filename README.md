@@ -51,4 +51,4 @@ This will create a *db.sqlite3* database file that is used by the project
 ```sh
 python manage.py runserver
 ```
-visit your website on your favorite browser at [127.0.0.1:8000](http://127.0.0.1:8000)
+Visit your website on your favorite browser at [127.0.0.1:8000](http://127.0.0.1:8000)
