@@ -14,11 +14,11 @@
   <body style="background-image: url({% static 'coronavirus.jpg' %}); background-repeat: no-repeat; background-position-x:center; background-position-y: center; background-size:cover;">
     <nav class="navbar navbar-light" style="background-color: #1F618D;">
   <a class="navbar-brand" style="color: white">COVID-19 Probability Detector</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  {% comment %} <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
+  </button> {% endcomment %}
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  {% comment %} <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#" style="color: white">Home <span class="sr-only">(current)</span></a>
@@ -30,7 +30,7 @@
         <a class="nav-link" href="#" style="color: white">Contact Us</a>
       </li>
     </ul>
-  </div>
+  </div> {% endcomment %}
 </nav>
 
 <p align="center" style="font-size: 40px; margin: 15px; color: white">Detect Here</p>

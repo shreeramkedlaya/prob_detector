@@ -17,13 +17,13 @@ def data_split(data, ratio):
     return data.iloc[test_data_indices], data.iloc[train_data_indices]
 
 
-test_data, train_data = data_split(df, 0.15)
+test_data, train_data = data_split(df, 0.30)
 x_train = train_data[['Age', 'BodyTemp.', 'Fatigue', 'Cough',
                       'BodyPain', 'SoreThroat', 'BreathingDifficulty']].to_numpy()
 x_test = test_data[['Age', 'BodyTemp.', 'Fatigue', 'Cough',
                     'BodyPain', 'SoreThroat', 'BreathingDifficulty']].to_numpy()
-y_train = train_data[['Infected']].to_numpy().reshape(3400, )
-y_test = test_data[['Infected']].to_numpy().reshape(600, )
+y_train = train_data[['Infected']].to_numpy().reshape(-1)
+y_test = test_data[['Infected']].to_numpy().reshape(-1)
 
 clf = LogisticRegression()
 clf.fit(x_train, y_train)
